@@ -15,8 +15,9 @@ gem 'puma', '~> 4.1'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-gem "tus-server", "~> 2.3"
+gem "shrine", "~> 2.0"     # File attachments
+gem "tus-server", "~> 2.0" # HTTP API for tus resumable upload protocol
+gem "shrine-tus", "~> 1.2" # Glue between Shrine and tus-server
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
