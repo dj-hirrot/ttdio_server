@@ -61,6 +61,7 @@ GEM
     builder (3.2.4)
     byebug (11.0.1)
     concurrent-ruby (1.1.5)
+    content_disposition (1.0.0)
     crass (1.0.5)
     erubi (1.9.0)
     ffi (1.11.3)
@@ -124,6 +125,8 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    roda (3.27.0)
+      rack
     ruby_dep (1.5.0)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
@@ -138,6 +141,9 @@ GEM
       sprockets (>= 3.0.0)
     thor (1.0.1)
     thread_safe (0.3.6)
+    tus-server (2.3.0)
+      content_disposition (~> 1.0)
+      roda (>= 2.27, < 4)
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
     websocket-driver (0.7.1)
@@ -157,6 +163,7 @@ DEPENDENCIES
   rails (~> 6.0.2, >= 6.0.2.1)
   spring
   spring-watcher-listen (~> 2.0.0)
+  tus-server (~> 2.3)
   tzinfo-data
 
 RUBY VERSION
